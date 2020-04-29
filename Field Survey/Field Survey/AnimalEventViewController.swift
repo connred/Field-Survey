@@ -17,6 +17,7 @@ class AnimalEventViewController: UIViewController, UITableViewDelegate, UITableV
         super.viewDidLoad()
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
+        self.title = "Field Survey"
         // Do any additional setup after loading the view.
     }
     func numberOfSections(in tableView: UITableView) -> Int {

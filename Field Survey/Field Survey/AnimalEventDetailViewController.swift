@@ -18,6 +18,7 @@ class AnimalEventDetailViewController: UIViewController {
     @IBOutlet weak var animailIconImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Observation"
         
         dateFormatter.dateStyle = .medium
         dateFormatter.timeStyle = .medium
