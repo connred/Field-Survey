@@ -15,6 +15,14 @@
 		DBFA06032459F26200A131B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFA06012459F26200A131B8 /* LaunchScreen.storyboard */; };
 		DBFA060E2459F26200A131B8 /* Field_SurveyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA060D2459F26200A131B8 /* Field_SurveyTests.swift */; };
 		DBFA06192459F26200A131B8 /* Field_SurveyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA06182459F26200A131B8 /* Field_SurveyUITests.swift */; };
+		DBFA062A2459F84800A131B8 /* field_observations.json in Resources */ = {isa = PBXBuildFile; fileRef = DBFA06292459F84800A131B8 /* field_observations.json */; };
+		DBFA062C2459F98B00A131B8 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA062B2459F98B00A131B8 /* Animal.swift */; };
+		DBFA06302459FBFC00A131B8 /* AnimalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA062F2459FBFC00A131B8 /* AnimalEvent.swift */; };
+		DBFA06322459FE2800A131B8 /* AnimalEventsJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA06312459FE2800A131B8 /* AnimalEventsJSONParser.swift */; };
+		DBFA0634245A05E500A131B8 /* AnimalEventsJSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0633245A05E500A131B8 /* AnimalEventsJSONLoader.swift */; };
+		DBFA0636245A22D900A131B8 /* AnimalEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0635245A22D900A131B8 /* AnimalEventViewController.swift */; };
+		DBFA0638245A230300A131B8 /* AnimalEventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0637245A230300A131B8 /* AnimalEventDetailViewController.swift */; };
+		DBFA063A245A298300A131B8 /* AnimalEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFA0639245A298300A131B8 /* AnimalEventTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,14 @@
 		DBFA06142459F26200A131B8 /* Field SurveyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Field SurveyUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFA06182459F26200A131B8 /* Field_SurveyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Field_SurveyUITests.swift; sourceTree = "<group>"; };
 		DBFA061A2459F26200A131B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFA06292459F84800A131B8 /* field_observations.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = field_observations.json; sourceTree = "<group>"; };
+		DBFA062B2459F98B00A131B8 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		DBFA062F2459FBFC00A131B8 /* AnimalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEvent.swift; sourceTree = "<group>"; };
+		DBFA06312459FE2800A131B8 /* AnimalEventsJSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventsJSONParser.swift; sourceTree = "<group>"; };
+		DBFA0633245A05E500A131B8 /* AnimalEventsJSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventsJSONLoader.swift; sourceTree = "<group>"; };
+		DBFA0635245A22D900A131B8 /* AnimalEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventViewController.swift; sourceTree = "<group>"; };
+		DBFA0637245A230300A131B8 /* AnimalEventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventDetailViewController.swift; sourceTree = "<group>"; };
+		DBFA0639245A298300A131B8 /* AnimalEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalEventTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,7 @@
 		DBFA05F22459F26100A131B8 /* Field Survey */ = {
 			isa = PBXGroup;
 			children = (
+				DBFA06262459F74100A131B8 /* Model */,
 				DBFA05F32459F26100A131B8 /* AppDelegate.swift */,
 				DBFA05F52459F26100A131B8 /* SceneDelegate.swift */,
 				DBFA05F92459F26100A131B8 /* Main.storyboard */,
@@ -106,6 +123,9 @@
 				DBFA06012459F26200A131B8 /* LaunchScreen.storyboard */,
 				DBFA06042459F26200A131B8 /* Info.plist */,
 				DBFA05FC2459F26100A131B8 /* Field_Survey.xcdatamodeld */,
+				DBFA0635245A22D900A131B8 /* AnimalEventViewController.swift */,
+				DBFA0637245A230300A131B8 /* AnimalEventDetailViewController.swift */,
+				DBFA0639245A298300A131B8 /* AnimalEventTableViewCell.swift */,
 			);
 			path = "Field Survey";
 			sourceTree = "<group>";
@@ -126,6 +146,18 @@
 				DBFA061A2459F26200A131B8 /* Info.plist */,
 			);
 			path = "Field SurveyUITests";
+			sourceTree = "<group>";
+		};
+		DBFA06262459F74100A131B8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBFA06292459F84800A131B8 /* field_observations.json */,
+				DBFA062B2459F98B00A131B8 /* Animal.swift */,
+				DBFA062F2459FBFC00A131B8 /* AnimalEvent.swift */,
+				DBFA06312459FE2800A131B8 /* AnimalEventsJSONParser.swift */,
+				DBFA0633245A05E500A131B8 /* AnimalEventsJSONLoader.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFA06032459F26200A131B8 /* LaunchScreen.storyboard in Resources */,
+				DBFA062A2459F84800A131B8 /* field_observations.json in Resources */,
 				DBFA06002459F26200A131B8 /* Assets.xcassets in Resources */,
 				DBFA05FB2459F26100A131B8 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +292,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFA0634245A05E500A131B8 /* AnimalEventsJSONLoader.swift in Sources */,
+				DBFA06302459FBFC00A131B8 /* AnimalEvent.swift in Sources */,
+				DBFA063A245A298300A131B8 /* AnimalEventTableViewCell.swift in Sources */,
 				DBFA05F42459F26100A131B8 /* AppDelegate.swift in Sources */,
+				DBFA062C2459F98B00A131B8 /* Animal.swift in Sources */,
+				DBFA06322459FE2800A131B8 /* AnimalEventsJSONParser.swift in Sources */,
+				DBFA0636245A22D900A131B8 /* AnimalEventViewController.swift in Sources */,
 				DBFA05FE2459F26100A131B8 /* Field_Survey.xcdatamodeld in Sources */,
 				DBFA05F62459F26100A131B8 /* SceneDelegate.swift in Sources */,
+				DBFA0638245A230300A131B8 /* AnimalEventDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
